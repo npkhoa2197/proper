@@ -530,12 +530,12 @@
 	      printers = []  :: [stats_printer()]}).
 -type ctx() :: #ctx{}.
 
--type setup_opts() :: #{numtests := pos_integer(),
-			search_steps := pos_integer(),
-			search_strategy := atom(),
-			start_size := size(),
-			max_size := size(),
-			output_fun := output_fun()}.
+-type setup_opts() :: #{numtests => pos_integer(),
+			search_steps => pos_integer(),
+			search_strategy => atom(),
+			start_size => size(),
+			max_size => size(),
+			output_fun => output_fun()}.
 %%
 
 %%-----------------------------------------------------------------------------
