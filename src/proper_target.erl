@@ -94,7 +94,7 @@
 -type target()   :: {target_state(), next_func(), fitness_func()}.
 -type strategy() :: module().
 -type opts()     :: strategy() 
-                  | #{search_steps := integer(), search_strategy := strategy()}.
+                  | #{search_steps => integer(), search_strategy => strategy()}.
 
 -record(state,
         {strategy           :: strategy(),
